@@ -48,6 +48,7 @@ button.addEventListener("click", () => {
     totalAttems = totalAttems - 1;
     guessesRemaining.textContent = totalAttems;
     previousGuesses.textContent = previousGussessArray.join(", ");
+    inputtedNumberElement.value = "";
 
     if (inputtedNumberValue - generateRamdomNumber > 50) {
       message.textContent = "Number is too height";
