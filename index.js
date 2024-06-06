@@ -1,4 +1,4 @@
-const generateRamdomNumber = Math.floor(Math.random() * 100 + 1);
+let generateRamdomNumber = Math.floor(Math.random() * 100 + 1);
 const button = document.querySelector("button");
 const message = document.getElementById("message");
 const inputtedNumberElement = document.querySelector('input[type="number"');
@@ -60,6 +60,7 @@ button.addEventListener("click", () => {
 });
 
 restartGame.addEventListener("click", () => {
+  generateRamdomNumber = Math.floor(Math.random() * 100 + 1);
   totalAttems = 10;
   message.textContent = "";
   inputtedNumberElement.value = "";
