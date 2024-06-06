@@ -9,9 +9,33 @@
 </head>
 
 <body>
-  <h1>Random Image Feed</h1>
+  <h1 class="gamename">Number Guessing Game</h1>
+  <div class="card">
+    <p class="game-des">Try and guess a random number between 1 and 100.
+      You have 10 attempts to guess the right number. </p>
+
+    <h2>Guess a number</h2>
+
+    <input type="number" max="100" min="1" placeholder="Enter a number">
+
+    <div id="message"></div>
+
+    <h2 class="restart-game" style="display: none;">Reset The Game</h2>
+
+
+    <div class="game-info">
+      <div>Previous Guesses: <span id="previous-guesses">Empty</span> </div>
+      <div>Guesses Remaining: <span id="guesses-remaining">10</span> </div>
+    </div>
+
+    <button>
+      Submit Guess
+    </button>
+
+
+
+  </div>
   <div class="content"></div>
-  <button></button>
 
   <script src="index.js"></script>
 </body>
